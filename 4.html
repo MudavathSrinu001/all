@@ -5,12 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <style>
-        div{
-            width: 200px;
-            height: 200px;
-            border: 1px solid;
+<style>
+    div{
+        height: 200px;
+        width: 200px;
+        background-color: #203040;
+        font-size: 30px;
+        text-align: center;
+        cursor: pointer;
+        color: whitesmoke;
+        display: inline-block;
+
+        }
+        p{
+            position: absolute;
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+        }
+        div:active > img{
+            display: block;
+        }
+
+        div:active > p{
+            display: none;
         }
         img{
             width: 100%;
@@ -18,26 +37,23 @@
             object-fit: cover;
             display: none;
         }
-        p{
-        
-            display: none;
-            font-size: 100px;
-        }
-        div:hover>p{
-            display: block;
-        }
-        div:active>img{
-            display:block;
-        }
-        div:active >p{ 
-            display: none;
-            
-        }
-    </style>
+</style>
+<body>
     <div>
-        <p>ss</p>
-    <img src="./A P J Abdul-Kalam.jpg" alt="">
+        <p>cat</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQK072qZcrCTN3noOGMncQoi30T3ftTJWHDQ&s" alt="">
     </div>
-    
+    <div>
+        <p>apj</p>
+        <img src="./A P J Abdul-Kalam.jpg" alt="">
+    </div>
+    <div>
+        <p>bunny</p>
+        <img src="./bunny.jpg" alt="">
+    </div>
+    <div>
+        <p>Swami</p>
+        <img src="./Swami-Vivekananda.jpg" alt="">
+    </div>
 </body>
 </html>

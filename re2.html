@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        #search {
+
+            outline:none ;
+            border:none ;
+        
+        }
+        
+        #search button[type="submit"] {
+        
+            width: 20px;
+            background:none;
+            cursor:pointer;
+            height:20px;
+        }
+        
+        button[type="submit"]>i:hover
+        {     
+            color: #fff;
+        
+        }   
+        
+        
+        button[type="submit"]>i
+        {
+            background:none;
+            color:#ccc;
+            font-size:1.1em; 
+        }
+        
+        
+        #search input[type="text"] 
+        {
+            border: 0 none;
+            background: #141d22;
+            text-indent: 0;
+            width:110px;
+            padding: 6px 15px 6px 35px;
+            -webkit-border-radius: 20px;
+            -moz-border-radius: 20px;
+            border-radius: 20px;
+        }
+    </style>
+    <li id="sb-search" style="float:right; list-style:none; height:20px; bottom:3px; ">
+        <form id="search">
+          <input name="q" type="text" size="40" placeholder="Pesquisar..." />
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </li>
+    
+    
+</body>
+</html>

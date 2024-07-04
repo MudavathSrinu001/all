@@ -3,34 +3,209 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       
+        .resume-container {
+            display: flex;
+            width: 90%;
+            max-width: 1000px;
+            background-color: rgb(249, 243, 243);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            border-radius: 33px
+        
+        }
+        .left-column {
+            flex: 1.2;
+            background-color: #a4bac8;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .left-column img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            
+        }
+        .right-column {
+            flex: 2;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(202, 224, 243);
+            /* align-items: ; */
+        }
+        .full-name {
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        .section  li{
+            font-size: 14px;
+            line-height: 1.4;        
+        }
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 10px;
+            text-align: cente;
+        }
+        .section-content {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+            text-align:;
+        }
+        .section-project .section-content{
+            font-size: 20px;
+        }
+        .section-project li{
+            font-size: 13px;  
+            line-height: 1.4;
+        
+        }
+        .right-column .full-name{
+            line-height:0.8;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid blue;
+            width: 100%;
+            margin: 10px 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        img{
+            border: 2px solid;
+            padding: 3px;
+            box-shadow:2px 1.6px ;
+            
+        
+        }
+        .g{
+            
+            align-self:end;
+        
+        }
+        
+    </style>
 </head>
 <body>
-    <style>
-        body{
-            width: 100%;
-            height: 100vh;
-            border: 1px solid;
-        }
-        .sri{
-            width: 400px;
-            height: 100vh;
-            background-color: rgb(140, 220, 249);
-            background-image: url(./A\ P\ J\ Abdul-Kalam.jpg);
-            background-size: 100px;
-            background-repeat: no-repeat;
-            background-position-x: 50%;
+    <div class="resume-container">
+        <div class="left-column">
+            <img src="./me pic .jpg">
+            <div class="section">
+                <h2 class="section-title">CONTACT</h2>
+                <p class="section-content">
+                    <i class="fa-solid fa-envelope"></i>: srinusrinu0299@gmail.com<br>
+                    <i class="fa-solid fa-phone"></i>: 6309592545<br>
+                    Address:6-5-73/2,Balanagar, Hyderabad.
+                </p>
+            </div>
+            <hr>
+            <div class="section">
+                <h2 class="section-title">SKILLS :-</h2>
+                    <ul>
+                        <li><b>Languages:-</b> JAVA, Python, HTML, CSS, JavaScript</li>
+                        <li><b>Tools:-</b>GitHub, Excel, Power Point, SQLite, Aws</li>
+                        <li><b>Platforms:-</b>PyCharm, Visual Studio Code, Intellij IDEA</li>
+                        
+                    </ul>
+            </div><hr>
+            <div class="section"> 
+                <h2 class="section-title">WORK EXPERIENCE:-</h2>
+                <p class="section-content">
+                     <p> <b>Internet of things @ Emertxe Technology,Bangalore </b></p>
+                   <ul><li>- IOT Based internship and projectand are utilized by clients .
+                </li>
+            <li>- Had furnished my project with 2d & 3d modelling.
+            </li>
+        <li>- Development and Designed of IOTs.
+        </li>
+    <li>- Skills Developed: Internet of Things (IoT), Software Workflow,
+    </li>
+<li>- System design, Object-Oriented Design.
+</li></ul>                
+                </p>
+            </div>
+            <hr>
+            <div class="section">
+                <h2 class="section-title">LEADERSHIP:-</h2>
+                <p class="section-content">
+                    During my college projects, I demonstrated strong leadership skills by effectively managing teams, coordinating tasks, and ensuring project milestones were met. My ability to motivate and guide team members fostered a collaborative environment that drove successful project outcomes. I excel in strategic planning and problem-solving, which were critical in navigating challenges and delivering high-quality results.
+                </p>
+            </div>
+
+        </div>
+
+        <div class="right-column">
+            <p class="full-name">MUDAVATH</p>
+            <p class="full-name">SRINU</p>
+            <p class="g">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-hackerrank"></i>
+                <i class="fa-brands fa-discord"></i>
+            </p>
             
+            <hr>
+            <div class="section-project">
+                <h2 class="section-title">PROJECTS</h2>
+                <h3 class="section-content">LAP TOP PRICE PREDICTION</h3>
+                    <ul>
+                        <li>
+                            <b>Objective:</b>Predicts laptop prices using machine learning algorithms based on features like screen size and CPU
+                            speed.
+                            </li>
+                            <li><b>Data and Features:</b>- Requires rigorous preprocessing due to noisy dataset for accurate predictions.</li>
+                            <li><b>Implementation:</b>- Model results align closely with traditional methods like neural networks and SVM.
+                            </li>
+                            <li><b>Accuracy and Performance:</b> Achieved a high prediction accuracy of nearly 80%, demonstrating the model’s reliability in real-world scenarios.</li>
+                    </ul>
+                <h3 class="section-content">RICE LEAF DISEASE DETECTION USING CNN</h3>
+                <ul>
+                    <li>
+                        <b>Developed and implemented:</b>- The project employs CNNs to detect and classify rice leaf diseases using image processing for
+                        early, accurate identification with minimal human intervention.</li>
+                        <li><b>Technical Skills:</b>PYTHON,PYTORCH,PANDAS,TENSORFLOW,MATPLOTLIB</li>
+                        <li>Effective disease detection is vital for sustainable farming and economic stability, especially
+                            with climate change affecting pathogen development.</li>
+                        <li><b>System Integration: </b>Utilizing a large rice plant image dataset, the method ensures robust disease detection and
+                            efficient monitoring of large crop fields</li>
+                        <!-- <li><b>Impact:</b> Contributed to improved security and user authentication processes through the development of a reliable iris recognition system.</li> -->
+                </ul>
+                   
+            </div>
+            <hr>
+            <div class="section">
+                <h2 class="section-title">Education</h2>
+                <p class="section-content">
+                    <strong>Artificial Intelligence and Machine Learning(AI&ML)</strong><br>
+                    -Marri Laxman Reddy Institute Of Technology and Management,<br><b>CGPA:- 7.50</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2020-2024<br><br>
+                    </p>
+                <hr>
+                <div class="section">
+                    <h2 class="section-title">Education</h2>
+                    <p class="section-content">
+                    <b>JAVA:-</b>Java Programmer Certification, earned from HackerRank <a href="">link</a><br>
+                    <b>DSA:-</b>Data Structures and Algorithms Certification, completed through Smartinterviews <a href="">link</a><br>
+                    <b>SQL:-</b>SQl Certification, Obtained from SkillUp <a href="">link</a><br>
+                        <b>FRONT-END:-</b>front-end Certification, Obtained from coursera <a href="">link</a>
+                        
 
-
-
-        }
-    </style>
-
-    <div class="sri" >
-
+                    </p>   
+                    
+                        
+            </div>
+        </div>
     </div>
-    
-    
 </body>
 </html>
